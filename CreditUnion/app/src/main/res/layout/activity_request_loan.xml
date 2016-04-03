@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.derek.creditunion.RequestLoan"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--android:src="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>
+
+    <!-- Union Assets field. Do not change-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Union Assets:"
+        android:textSize="28sp"
+        android:id="@+id/UnionAssetsField"
+        android:textColor="#003300"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="10dp" />
+
+    <!-- Your Share field. Do not change-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Share:"
+        android:textSize="28sp"
+        android:textColor="#003300"
+        android:id="@+id/YourShareField"
+        android:layout_alignTop="@+id/YourShareDollars"
+        android:layout_alignLeft="@+id/UnionAssetsField"
+        android:layout_alignStart="@+id/UnionAssetsField" />
+
+    <!-- union assets in dollars. Please update when appropriate-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$40000.00"
+        android:textSize="30sp"
+        android:textColor="#003300"
+        android:id="@+id/UnionAssetsDollars"
+        android:layout_alignTop="@+id/UnionAssetsField"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="20dp" />
+
+    <!-- you share in dollars. Please update when appropriate-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$400.00"
+        android:textSize="30sp"
+        android:textColor="#003300"
+        android:id="@+id/YourShareDollars"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/UnionAssetsBTC"
+        android:layout_alignRight="@+id/UnionAssetsDollars"
+        android:layout_alignEnd="@+id/UnionAssetsDollars" />
+
+    <!-- union assets in bitcoins. Please update when appropriate-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100.00000001 BTC"
+        android:textSize="15sp"
+        android:textColor="#003300"
+        android:id="@+id/UnionAssetsBTC"
+        android:layout_below="@+id/UnionAssetsField"
+        android:layout_alignRight="@+id/UnionAssetsDollars"
+        android:layout_alignEnd="@+id/UnionAssetsDollars" />
+
+    <!-- your share in bitcoins. Please update when appropriate -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.00000001BTC"
+        android:textSize="15sp"
+        android:textColor="#003300"
+        android:id="@+id/YourShareBTC"
+        android:layout_below="@+id/YourShareDollars"
+        android:layout_alignLeft="@+id/YourShareDollars"
+        android:layout_alignStart="@+id/YourShareDollars" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Specify Request Amount"
+        android:textSize="20sp"
+        android:id="@+id/Request"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/Confirm"
+        android:layout_alignStart="@+id/Confirm"
+        android:layout_alignRight="@+id/YourShareBTC"
+        android:layout_alignEnd="@+id/YourShareBTC" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Request"
+        android:textSize="30sp"
+        android:id="@+id/Confirm"
+        android:layout_below="@+id/Request"
+        android:layout_alignLeft="@+id/YourShareField"
+        android:layout_alignStart="@+id/YourShareField" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

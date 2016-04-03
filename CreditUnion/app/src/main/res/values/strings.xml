@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Credit Union</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="pepe">x</string>
+    <string name="edit_message">y</string>
+    <string name="title_activity_view_union">View Union</string>
+    <string name="title_activity_payment">Deposit Money</string>
+    <string name="title_activity_contribute">Request a Loan</string>
+    <string name="title_activity_pending_actions">Pending Actions</string>
+    <string name="title_activity_members">Members</string>
+    <string name="title_activity_xact_history">Transaction History</string>
+    <string name="title_activity_request_loan">Request Loan</string>
+</resources>

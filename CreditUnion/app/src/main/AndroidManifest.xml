@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.derek.creditunion">
+
+    <application
+        android:name=".controller.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.derek.creditunion.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ViewUnion"
+            android:label="@string/title_activity_view_union"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Payment"
+            android:label="@string/title_activity_payment"
+            android:parentActivityName=".ViewUnion"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.derek.creditunion.ViewUnion" />
+        </activity>
+        <activity
+            android:name=".PendingActions"
+            android:label="@string/title_activity_pending_actions"
+            android:parentActivityName=".ViewUnion"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.derek.creditunion.ViewUnion" />
+        </activity>
+        <activity
+            android:name=".Members"
+            android:label="@string/title_activity_members"
+            android:parentActivityName=".ViewUnion"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.derek.creditunion.ViewUnion" />
+        </activity>
+        <activity
+            android:name=".XactHistory"
+            android:label="@string/title_activity_xact_history"
+            android:parentActivityName=".ViewUnion"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.derek.creditunion.ViewUnion" />
+        </activity>
+        <activity
+            android:name=".RequestLoan"
+            android:label="@string/title_activity_request_loan"
+            android:parentActivityName=".ViewUnion"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.derek.creditunion.ViewUnion" />
+    </application>
+
+
+</manifest>
